@@ -1,0 +1,9 @@
+
+{
+  "name": "ISL-to-Malayalam AI Translator",
+  "description": "An AI-powered real-time Indian Sign Language (ISL) to Malayalam text and voice translator for breaking communication barriers.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

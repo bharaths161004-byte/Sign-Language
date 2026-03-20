@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Custom styles */
+body {
+    @apply bg-slate-50 text-slate-900;
+    font-family: 'Inter', sans-serif;
+}
+
+.ml-font {
+    font-family: 'Meera', 'Inter', sans-serif;
+}
+
+@keyframes text-float {
+    0%, 100% { transform: translateY(0px); opacity: 1; }
+    50% { transform: translateY(-6px); opacity: 0.85; }
+}
+
+.animate-text-float {
+    animation: text-float 2.8s ease-in-out infinite;
+}
+
+@keyframes pulse-ring {
+    0% { transform: scale(.33); }
+    80%, 100% { opacity: 0; }
+}
+
+.animate-pulse-ring::before {
+    content: '';
+    position: absolute;
+    left: -50%; top: -50%;
+    width: 200%; height: 200%;
+    background-color: #3b82f6;
+    border-radius: 50%;
+    animation: pulse-ring 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+}
